@@ -1,8 +1,9 @@
 const express = require('express');
+const ip = require('ip');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('AWS exercise의 A project입니다.');
+  res.send('AWS exercise의 A project입니다. @' + ip.address());
 });
 
 app.listen(3000, () => {
