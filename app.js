@@ -3,7 +3,7 @@ const ip = require('ip');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('AWS exercise의 A project입니다. @' + ip.address());
+  res.send('클라우드 과정 “6조 유민지, 유영재, 이재성” 입니다. 현재 접속한 인스턴스의 주소는 ' + ip.address() + ' 입니다.');
 });
 
 app.listen(3000, () => {
